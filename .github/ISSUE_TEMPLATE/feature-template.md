@@ -11,5 +11,5 @@ assignees: ''
 **Goal**: 
 **Stakeholders:** 
 **Description:** 
-**Origin:**
+**Origin:** Based on initial project specification document, team members came up with this description during the first meeting.
  **Version:** 1.0  |**Date:** 05/19/2020|  **Priority:** 1
