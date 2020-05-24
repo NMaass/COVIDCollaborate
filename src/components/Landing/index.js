@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 export default function Landing(props) {
-    const[name, setName] = useState('');
+    const [name, setName] = useState('')
 
     return(
         <div>
@@ -10,7 +10,8 @@ export default function Landing(props) {
                 value={name}
                 onChange={e => setName(e.target.value)}
             />
-            <h1>Welcome {name}, to our website</h1>
+            <h1>Welcome to COVID collaborate {name}</h1>
         </div>
     );
 }
+
