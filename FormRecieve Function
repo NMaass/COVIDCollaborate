@@ -1,0 +1,3 @@
+db.DATABASENAME.set({ Name: Formname, FormNumber, FormHospital, FormVolunteer})
+.then(function(){console.log("Successful recive");})
+.catch(function(error){ Console.error("Error reciving ", error);});
