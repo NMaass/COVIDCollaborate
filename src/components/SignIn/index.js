@@ -6,19 +6,24 @@ import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
+import Link from "@material-ui/core/Link";
+import Button from "@material-ui/core/Button";
 
 const SignInPage = () => (
-    <div>
+    <div className="signInForm centered-container">
+        <div className="col-4 col-s-8">
         <h1>SignIn</h1>
         <SignInForm />
         <PasswordForgetLink />
         <SignUpLink />
+        </div>
     </div>
 );
 
 const INITIAL_STATE = {
     email: '',
     password: '',
+    type: '',
     error: null,
 };
 
@@ -57,6 +62,7 @@ class SignInFormBase extends Component {
         return (
             <form onSubmit={this.onSubmit}>
                 <input
+                    className="field"
                     name="email"
                     value={email}
                     onChange={this.onChange}
@@ -64,15 +70,19 @@ class SignInFormBase extends Component {
                     placeholder="Email Address"
                 />
                 <input
+                    className="field"
                     name="password"
                     value={password}
                     onChange={this.onChange}
                     type="password"
                     placeholder="Password"
                 />
-                <button disabled={isInvalid} type="submit">
-                    Sign In
-                </button>
+                <Button
+                    className="field"
+                    disabled={isInvalid}
+                    type="submit">
+                    Log In
+                </Button>
 
                 {error && <p>{error.message}</p>}
             </form>
@@ -87,4 +97,17 @@ const SignInForm = compose(
 
 export default SignInPage;
 
-export { SignInForm };
+const SignInLink = () => (
+    <p className="signInLink center">
+        <Link to={ROUTES.SIGN_IN}>Log in</Link>
+    </p>
+);
+
+const SignInLink2 = () => (
+    <p className="signInLink center">
+        Go back to <Link to={ROUTES.SIGN_IN}>Log in</Link>
+    </p>
+);
+
+
+export { SignInForm, SignInLink, SignInLink2 };

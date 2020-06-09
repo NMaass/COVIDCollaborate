@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Landing = () => (
-    <div>
-        <h1>Landing</h1>
-    </div>
-);
+export default function Landing(props) {
+    const [name, setName] = useState('');
 
-export default Landing;
+    return(
+        <div>
+            <input
+            type="text"
+            value={name}
+            onChange={event => setName(event.target.value)}
+            />
+            <h1> Welcome to COVID collaborate {name}</h1>
+        </div>
+    )
+}
