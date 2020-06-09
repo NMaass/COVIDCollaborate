@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: dodgerblue;
+    /*background-image: url("./Assets/Background.png");*/
+}
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+    max-width: 800px;
+}
+.field{
+    width: 100%;
+    height: 56px;
+    display: block;
+    padding: 0px 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 14px auto;
+    outline: none;
+    box-shadow: 0px 4px 20px 0px transparent;
+}
+.Signout{
+    width: 50%;
+}
+p {
+    color: aliceblue;
+}
+h1 {
+    color: black;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+.centered{
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+.signInLink{
+    color: white;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+}
+.signInLink input:hover{
+    color: white;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+link{
+    text-decoration: none;
+}
+/*Responsive layout classes*/
+
+/* For mobile phones: */
+.row {
+    padding: 0 32px;
+    display: block;
+    clear: both;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*centers horizontally*/
+.center {
+    text-align: center
+}
+
+/*centers horizontally and vertically for entire page*/
+.centered-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+}
+
