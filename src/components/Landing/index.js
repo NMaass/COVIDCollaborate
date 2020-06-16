@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Landing = () => (
-    <div>
-        <h1>Landing</h1>
-    </div>
-);
-
-export default Landing;
+export default function Landing(props) {
+    return(
+        <div>
+            <h1> Welcome to COVID collaborate {name}</h1>
+        </div>
+    )
+}

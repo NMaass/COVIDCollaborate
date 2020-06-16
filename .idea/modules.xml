@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/COVIDCollaborate.iml" filepath="$PROJECT_DIR$/.idea/COVIDCollaborate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Covidcolab.iml" filepath="$PROJECT_DIR$/.idea/Covidcolab.iml" />
     </modules>
   </component>
 </project>
