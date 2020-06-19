@@ -124,3 +124,9 @@ link{
     clear: both;
 }
 
+.GridContainer {
+    paddingLeft: '20px';
+    padingRight: '20px';
+
+}
+
