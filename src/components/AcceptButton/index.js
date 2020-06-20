@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 import ImgMediaCard from "./Card";
 import { Grid } from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
