@@ -1,1 +1,1 @@
-db.collection("Requests").doc("Hospital").set({Request: rname, Amount: rnumber})
+db.collection("Requests").doc(rname).set({Request: rname, Amount: rnumber, Hospital: hname})
