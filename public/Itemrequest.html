@@ -3,7 +3,16 @@
 <title>Item Requesting</title>
 </head>
 <body>
-<div>
+  <div>
+    <script>
+      //need to initialize firebase
+      function Requestsend.js()
+      {
+      firebase.database().ref("Requests").set({
+      Request: document.getElementById("rname").value,
+      Amount: document.getElementById("rnumber").value,
+      Hospital: document.getElementById("hname").value
+      }
 <h2>Requesting Items<h2>
 </div>
 <form action ="Requestsend.js">
