@@ -1,14 +1,13 @@
 import React from 'react';
 
-import { withAuthorization } from '../Session';
+import {getUserType} from "../../api";
 //this is where we're going to check user type, more on that later
-const HomePage = () => (
-    <div>
-        <h1>Home Page</h1>
-        <p>Welcome to COVID Collaborate</p>
-    </div>
-);
+export default function homePage() {
+    const userType = getUserType();
+    if(userType === hospital){
 
-const condition = authUser => !!authUser;
+    }
+    else{
 
-export default withAuthorization(condition)(HomePage);
+    }
+}

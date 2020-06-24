@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-export const getUser = async () => {
+export const getUserType = async () => {
     try {
         const user = firebase.auth().currentUser;
         const data = await firebase.firestore()
