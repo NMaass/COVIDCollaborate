@@ -5,7 +5,9 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
     background-color: lightskyblue;
+
     /*background-image: url("./Assets/Background.png");*/
 }
 .chips{
@@ -48,13 +50,13 @@ h1 {
     align-content: center;
 }
 .signInLink{
-    color: white;
+    color: #3f9699;
     font-size: 300%;
     font-weight: bold;
     text-align: center;
 }
 .signInLink input:hover{
-    color: white;
+    color: turquoise;
 }
 
 code {
