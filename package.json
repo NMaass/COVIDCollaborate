@@ -39,5 +39,9 @@
   },
   "devDependencies": {
     "react-test-renderer": "^16.13.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/NMaass/COVIDCollaborate.git",
+  "author": "birolguldal <birolguldal@gmail.com>",
+  "license": "MIT"
 }
