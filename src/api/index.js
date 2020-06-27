@@ -49,3 +49,25 @@ export const claimTask = async (props) => {
         console.log("Task claiming failed", e);
     }
 }
+export const getRequests = async (cb) => {
+    try{
+        const user = firebase.auth().currentUser;
+        return await firebase.firestore()
+            .collection('requests')
+            .onSnapshot(snap => {
+                const docs   = [];
+
+                snap.forEach(
+                    doc => {
+                        docs.push({
+                            id: doc.id,
+                            ...doc.data()
+                        })
+                    }
+                );
+                cb(docs)
+            });
+    } catch (e) {
+        console.log("Get requests failed", e);
+    }
+}
