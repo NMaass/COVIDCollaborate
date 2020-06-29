@@ -6,6 +6,8 @@ import * as ROUTES from '../../constants/routes';
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import DonorFields from "../DonorFields";
+import * as ROLES from '../../constants/roles';
+import {createUser} from "../../api";
 
 const SignUpPage = () => (
     <div className="signInForm centered-container">
@@ -39,33 +41,44 @@ class SignUpFormBase extends Component {
         this.state = { ...INITIAL_STATE };
     }
 
-    onSubmit = event => {
-        const { username, email, passwordOne, isDonor, address, city, state, country, zip, website } = this.state;
-        this.props.firebase
-            .doCreateUserWithEmailAndPassword(email, passwordOne)
-            .then(authUser => {
-                // Create a user in your Firebase realtime database
-                this.props.firebase
-                    .user(authUser.user.uid)
-                    .set({
-                        username,
-                        email,
-                    })
-                    .then(() => {
-                        this.setState({ ...INITIAL_STATE });
-                        this.props.history.push(ROUTES.HOME);
-                    })
-                    .catch(error => {
-                        this.setState({ error });
-                    });
-            })
-            .catch(error => {
-                this.setState({ error });
-            });
+    onSubmit = async event => {
+
 
         event.preventDefault();
+
+        const {username, email, passwordOne, isDonor, address, city, state, country, zip, website} = this.state;
+        const roles = [];
+
+        if (isDonor) {
+            roles.push(ROLES.DONOR)
+        } else {
+            roles.push(ROLES.HOSPITAL)
+        }
+
+        const payload = {
+            username,
+            email,
+            passwordOne,
+            type: isDonor ? 'donor' : 'hospital',
+            address_detail: {
+                address,
+                city,
+                zip,
+                country,
+                state
+            },
+            website
+        }
+        const result = await createUser(payload);
+        console.log("Create user failed", result)
+        if (result.error || result !== true) {
+            this.setState({error: result.error});
+        }
+
+        this.setState({...INITIAL_STATE});
+        this.props.history.push(ROUTES.HOME);
     };
-    handleCheck= event => {
+    handleCheck = event => {
         this.setState({[event.target.name]: event.target.checked});
     };
     onChange = event => {
@@ -100,6 +113,7 @@ class SignUpFormBase extends Component {
                 <Checkbox
                     checked={isDonor}
                     onChange={this.handleCheck}
+                    name="isDonor"
                 />
             }   label = "I am a donor"
                               />
