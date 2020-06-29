@@ -1,9 +1,33 @@
 <html>
+  <link rel="stylesheet" href="index.css">
 <head>
 <title>Item Requesting</title>
 </head>
 <body>
   <div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBJn0f9jY_bU1lXzsiTgUADQmkTUysoz68",
+    authDomain: "covidcollaborate.firebaseapp.com",
+    databaseURL: "https://covidcollaborate.firebaseio.com",
+    projectId: "covidcollaborate",
+    storageBucket: "covidcollaborate.appspot.com",
+    messagingSenderId: "807042052247",
+    appId: "1:807042052247:web:1e94a2caf32b6fe1a1b9d2",
+    measurementId: "G-R1FLLGMSE5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <script>
       //need to initialize firebase
       function Requestsend.js()
