@@ -12,8 +12,8 @@ import {createUser} from "../../api";
 const SignUpPage = () => (
     <div className="signInForm centered-container">
         <div className="col-4 col-s-8">
-        <h1>SignUp</h1>
-        <SignUpForm />
+            <h1>SignUp</h1>
+            <SignUpForm />
         </div>
     </div>
 );
@@ -109,14 +109,14 @@ class SignUpFormBase extends Component {
 
         return (
             <form onSubmit={this.onSubmit}>
-            <FormControlLabel control={
-                <Checkbox
-                    checked={isDonor}
-                    onChange={this.handleCheck}
-                    name="isDonor"
+                <FormControlLabel control={
+                    <Checkbox
+                        checked={isDonor}
+                        onChange={this.handleCheck}
+                        name="isDonor"
+                    />
+                }   label = "I am a donor"
                 />
-            }   label = "I am a donor"
-                              />
                 <input
                     className="field"
                     name="username"
@@ -207,7 +207,6 @@ class SignUpFormBase extends Component {
                     type="submit">
                     Sign Up
                 </button>
-
 
 
                 {error && <p>{error.message}</p>}
