@@ -1,19 +1,15 @@
 import React from 'react';
-import Donorhome from "../DonorHome";
 
-
-import { withAuthorization } from '../Session';
+import {getUserType} from "../../api";
+import HospitalHome from "../HospitalHome";
+import DonorHome from "../DonorHome";
 //this is where we're going to check user type, more on that later
-const HomePage = () => (
-    <div>
-        <h1>Home Page</h1>
-        <p>Welcome to COVID Collaborate</p>
-        <Donorhome>
-
-        </Donorhome>
-    </div>
-);
-
-const condition = authUser => !!authUser;
-
-export default withAuthorization(condition)(HomePage);
+export default function homePage() {
+    const userType = getUserType();
+    if(userType == 'hospital'){
+        return <HospitalHome></HospitalHome>
+    }
+    else{
+        return <DonorHome></DonorHome>
+    }
+}
