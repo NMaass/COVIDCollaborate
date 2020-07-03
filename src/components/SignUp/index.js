@@ -59,7 +59,7 @@ class SignUpFormBase extends Component {
             username,
             email,
             passwordOne,
-            type: isDonor ? 'donor' : 'hospital',
+            usertype: isDonor ? 'donor' : 'hospital',
             address_detail: {
                 address,
                 city,
