@@ -1,0 +1,17 @@
+Index: .idea/covidcollaborate.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"WEB_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.tmp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/build\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/temp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/tmp\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/covidcollaborate.iml	(revision f4954646766cccf06249067e4ba0d9f38b6f9c72)
++++ .idea/covidcollaborate.iml	(date 1592624811082)
+@@ -3,7 +3,6 @@
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+-      <excludeFolder url="file://$MODULE_DIR$/build" />
+       <excludeFolder url="file://$MODULE_DIR$/temp" />
+       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+     </content>
