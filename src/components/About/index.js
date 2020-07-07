@@ -11,7 +11,7 @@ export default function AboutPage() {
             </div>
 
             <div className="tagline">
-                <h4>"Tag Line Here"</h4>
+                <h4>Helping Hospital</h4>
             </div>
 
             &nbsp;
@@ -20,7 +20,7 @@ export default function AboutPage() {
             </div>
 
             <div className="tagline">
-                <h4>" In this Page where you will learn more about our app.................."  </h4>
+                <h4>" In this Page where you will learn how to use our app and help hospital"  </h4>
             </div>
             &nbsp;
 
