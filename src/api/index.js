@@ -9,8 +9,7 @@ export const createUser = async payload => {
 
 
         // Delete password from payload
-        const secureUserInfo = payload;
-        delete secureUserInfo.passwordOne;
+        delete payload.passwordOne;
 
 
         // Save secure user information to db

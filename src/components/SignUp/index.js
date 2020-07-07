@@ -8,12 +8,18 @@ import Checkbox from "@material-ui/core/Checkbox";
 import DonorFields from "../DonorFields";
 import * as ROLES from '../../constants/roles';
 import {createUser} from "../../api";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import TextField from '@material-ui/core/TextField';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from "@material-ui/core/Typography";
+
 
 const SignUpPage = () => (
-    <div className="signInForm centered-container">
+    <div className="signInForm centered-container SignupImage ">
         <div className="col-4 col-s-8">
-        <h1>SignUp</h1>
-        <SignUpForm />
+            <h1>User SignUp</h1>
+            <SignUpForm />
         </div>
     </div>
 );
@@ -59,7 +65,7 @@ class SignUpFormBase extends Component {
             username,
             email,
             passwordOne,
-            type: isDonor ? 'donor' : 'hospital',
+            usertype: isDonor ? 'donor' : 'hospital',
             address_detail: {
                 address,
                 city,
@@ -109,14 +115,14 @@ class SignUpFormBase extends Component {
 
         return (
             <form onSubmit={this.onSubmit}>
-            <FormControlLabel control={
-                <Checkbox
-                    checked={isDonor}
-                    onChange={this.handleCheck}
-                    name="isDonor"
+                <FormControlLabel control={
+                    <Checkbox
+                        checked={isDonor}
+                        onChange={this.handleCheck}
+                        name="isDonor"
+                    />
+                }   label = "I am a donor"
                 />
-            }   label = "I am a donor"
-                              />
                 <input
                     className="field"
                     name="username"
@@ -207,7 +213,6 @@ class SignUpFormBase extends Component {
                     type="submit">
                     Sign Up
                 </button>
-
 
 
                 {error && <p>{error.message}</p>}

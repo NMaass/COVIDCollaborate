@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Button from "@material-ui/core/Button";
 import {getRequests} from "../../api";
 import Card from "@material-ui/core/Card";
+import AcceptButton from "../AcceptButton";
 
 
 export default function DonorHome() {
@@ -19,6 +20,8 @@ export default function DonorHome() {
     return(
     <div>
         <Button onClick = {onClick}>View Requests</Button>
+        <AcceptButton>
+        </AcceptButton>
         {Boolean(request.length) && request.map((request, i) => (
             <Card
                 key={i}
@@ -28,5 +31,5 @@ export default function DonorHome() {
             )
         )}
     </div>
-)
+    )
 }
