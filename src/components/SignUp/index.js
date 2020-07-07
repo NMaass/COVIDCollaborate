@@ -16,9 +16,9 @@ import Typography from "@material-ui/core/Typography";
 
 
 const SignUpPage = () => (
-    <div className="signInForm centered-container">
+    <div className="signInForm centered-container SignupImage ">
         <div className="col-4 col-s-8">
-            <h1>SignUp</h1>
+            <h1>User SignUp</h1>
             <SignUpForm />
         </div>
     </div>

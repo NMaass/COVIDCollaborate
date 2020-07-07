@@ -9,10 +9,11 @@ import * as ROUTES from '../../constants/routes';
 import Link from "@material-ui/core/Link";
 import Button from "@material-ui/core/Button";
 
+
 const SignInPage = () => (
-    <div className="signInForm centered-container">
+    <div className="signInForm centered-container BackgroundSignInImage ">
         <div className="col-4 col-s-8">
-            <h1>SignIn</h1>
+            <h1>User Login</h1>
             <SignInForm />
             <PasswordForgetLink />
             <SignUpLink />

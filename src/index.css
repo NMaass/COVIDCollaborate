@@ -13,6 +13,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 120vh;
+    background-image:url("../src/components/SignIn/Login6.svg");
+
+
 
 
     /*background-image: url("./Assets/Background.png");*/
@@ -48,7 +51,7 @@ body {
 button {
     border-radius: 20px;
     border: 1px solid #ff4b2b;
-    color: #333333;
+    color: floralwhite;
     font-size: 12px;
     font-weight: bold;
     padding: 12px 45px;
@@ -56,6 +59,29 @@ button {
     text-transform: uppercase;
     transition: transform 80ms ease-in;
 
+}
+.centered-container {
+    background: #3f9699;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    height: 800px;
+    max-height: 1000px;
+
+}
+
+.BackgroundSignInImage {
+    background-image:url("../src/components/SignIn/Login5.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.SignupImage {
+    background-image:url("../src/components/SignIn/Login5.jpg");
+    background-position: center;
+    background-size: 100%;
 }
 button:active {
     transform: scale(0.95);
@@ -67,10 +93,13 @@ button:active {
     text-align: center;
     border: 1px solid #ff4b2b;
 }
-
+.Navigation {
+    background: white;
+    border-radius: 3px;
+}
 
 p {
-    color: aliceblue;
+    color: #eeeeee;
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -88,7 +117,7 @@ span {
 }
 
 a {
-    color: #333;
+    color: #eeeeee;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
@@ -96,11 +125,12 @@ a {
 
 
 h1 {
-    color: black;
+    color: white;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     margin: 0;
+    border: 2px;
 
 
 }
@@ -116,17 +146,6 @@ h1 {
     font-weight: bold;
     text-align: center;
 
-
-}
-
-.centered-container {
-    background: #3f9699;
-    border-radius: 50px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
-    overflow: hidden;
-    width:  700px;
-    height: 80px;
 
 }
 
