@@ -53,7 +53,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundImage: 'url(gloves.bmp)',
+            backgroundImage: 'url(' + require('./HandSanitizer.bmp') + ')',
             borderRadius: spacing(2), // 16
             opacity: 0.5,
         },
@@ -82,12 +82,13 @@ export const GlovesCard = React.memo(function GlovesCard() {
         <Card className={cx(styles.root, shadowStyles.root)}>
             <CardMedia
                 className={styles.media}
+                image={'masks.bmp'}
             />
             <CardContent>
                 <TextInfoContent
                     classes={contentStyles}
                     overline={'02 JUL 2020'}
-                    heading={'Gloves'}
+                    heading={'Hand Sanitizer'}
                     body={
                         'St. Joseph Mercy Ann Arbor Hospital' +
                         ' 5301 McAuley Dr, Ypsilanti, MI 48197'

@@ -53,7 +53,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundImage: 'url(src\\components\\DonorHome\\faceshields.bmp)',
+            backgroundImage: 'url(' + require('./faceshields.bmp') + ')',
             borderRadius: spacing(2), // 16
             opacity: 0.5,
         },
