@@ -6,6 +6,7 @@ export const ACCOUNT = '/account';
 export const ADMIN = '/admin';
 export const PASSWORD_FORGET = '/pw-forget';
 export const ABOUT_PAGE = '/About';
+export const HOSPITAL_ADDRESS = '/Hospital';
 
 export const DONOR_HOME = '/donor'
 export const HOSPITAL_HOME = '/hospital'

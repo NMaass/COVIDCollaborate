@@ -1,7 +1,11 @@
 import React from "react";
-
+import AcceptButton from "../AcceptButton";
 export default function HospitalHome() {
 return(
-    <div></div>
+    <div>
+
+     <AcceptButton>
+     </AcceptButton>
+    </div>
 )
 }
