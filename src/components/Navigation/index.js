@@ -31,11 +31,10 @@ const NavigationAuth = () => (
             <Link to={ROUTES.ADMIN}>Admin</Link>
         </li>
         <li>
-            <Link to={ROUTES.ABOUT_PAGE}>About</Link>
-        </li>
-
-        <li>
             <SignOutButton />
+        </li>
+        <li>
+            <Link to={ROUTES.DONOR_HOME}>Donor</Link>
         </li>
     </ul>
 );

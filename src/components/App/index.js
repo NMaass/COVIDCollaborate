@@ -13,6 +13,12 @@ import AboutPage from "../About";
 
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
+import DonorHome from "../DonorHome";
+
+
+//firebase.firestore().collection('requests').add({
+   // test:'adsaasdasd',
+//}''
 
 const App = () => (
     <Router>
@@ -32,7 +38,6 @@ const App = () => (
             <Route exact path={ROUTES.HOME} component={HomePage} />
             <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
             <Route exact path={ROUTES.ADMIN} component={AdminPage} />
-            <Route exact path={ROUTES.ABOUT_PAGE} component={AboutPage} />
         </div>
     </Router>
 );
