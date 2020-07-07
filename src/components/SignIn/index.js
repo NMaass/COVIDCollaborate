@@ -23,8 +23,8 @@ const SignInPage = () => (
 const INITIAL_STATE = {
     email: '',
     password: '',
-    type: '',
-    error: null,
+    emailError: '',
+    passwordError: '',
 };
 
 class SignInFormBase extends Component {
@@ -33,6 +33,25 @@ class SignInFormBase extends Component {
 
         this.state = { ...INITIAL_STATE };
     }
+
+    validate = () => {
+        let emailError= '';
+        let passwordError= '';
+
+        if (!this.state.email.includes('@')) {
+            emailError = 'invalid email';
+        }
+
+        if (!this.state.password.includes('none')) {
+            passwordError = 'invalid password';
+        }
+
+        if (emailError || passwordError) {
+            this.setState({emailError, passwordError});
+            return false;
+        }
+        return true;
+    };
 
     onSubmit = event => {
         const { email, password } = this.state;
@@ -48,6 +67,12 @@ class SignInFormBase extends Component {
             });
 
         event.preventDefault();
+        const isValid= this.validate();
+        if (isValid) {
+            console.log(this.state);
+            //clear form
+            this.setState(INITIAL_STATE);
+        }
     };
 
     onChange = event => {
@@ -69,6 +94,9 @@ class SignInFormBase extends Component {
                     type="text"
                     placeholder="Email Address"
                 />
+                 <div style={{fontSize:14, color: "red"}}>
+                    {this.state.emailError}</div>
+
                 <input
                     className="field"
                     name="password"
@@ -77,6 +105,9 @@ class SignInFormBase extends Component {
                     type="password"
                     placeholder="Password"
                 />
+                <div style={{fontSize:14, color: "red"}}>
+                    {this.state.passwordError}</div>
+
                 <Button
                     className="field"
                     disabled={isInvalid}
