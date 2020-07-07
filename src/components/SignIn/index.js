@@ -12,10 +12,10 @@ import Button from "@material-ui/core/Button";
 const SignInPage = () => (
     <div className="signInForm centered-container">
         <div className="col-4 col-s-8">
-        <h1>SignIn</h1>
-        <SignInForm />
-        <PasswordForgetLink />
-        <SignUpLink />
+            <h1>SignIn</h1>
+            <SignInForm />
+            <PasswordForgetLink />
+            <SignUpLink />
         </div>
     </div>
 );
@@ -94,7 +94,7 @@ class SignInFormBase extends Component {
                     type="text"
                     placeholder="Email Address"
                 />
-                 <div style={{fontSize:14, color: "red"}}>
+                <div style={{fontSize:14, color: "red"}}>
                     {this.state.emailError}</div>
 
                 <input
@@ -107,7 +107,6 @@ class SignInFormBase extends Component {
                 />
                 <div style={{fontSize:14, color: "red"}}>
                     {this.state.passwordError}</div>
-
                 <Button
                     className="field"
                     disabled={isInvalid}
