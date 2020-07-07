@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.14",
+    "@mui-treasury/components": "^1.5.2",
+    "@mui-treasury/styles": "^1.8.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^10.0.4",
     "@testing-library/user-event": "^7.1.2",
@@ -38,13 +40,13 @@
     ]
   },
   "devDependencies": {
+    "clsx": "^1.1.1",
     "react-test-renderer": "^16.13.1"
   },
   "main": "index.js",
   "repository": "https://github.com/NMaass/COVIDCollaborate.git",
   "author": "birolguldal <birolguldal@gmail.com>",
-  "license": "MIT"
-    "react-test-renderer": "^16.13.1",
-    "style-loader": "^1.2.1"
-  }
+  "license": "MIT",
+  "react-test-renderer": "^16.13.1",
+  "style-loader": "^1.2.1"
 }

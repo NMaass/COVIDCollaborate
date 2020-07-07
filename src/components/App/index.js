@@ -16,10 +16,6 @@ import { withAuthentication } from '../Session';
 import DonorHome from "../DonorHome";
 
 
-//firebase.firestore().collection('requests').add({
-   // test:'adsaasdasd',
-//}''
-
 const App = () => (
     <Router>
         <div>
