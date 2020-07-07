@@ -8,11 +8,17 @@ import Checkbox from "@material-ui/core/Checkbox";
 import DonorFields from "../DonorFields";
 import * as ROLES from '../../constants/roles';
 import {createUser} from "../../api";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import TextField from '@material-ui/core/TextField';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from "@material-ui/core/Typography";
+
 
 const SignUpPage = () => (
-    <div className="signInForm centered-container">
+    <div className="signInForm centered-container SignupImage ">
         <div className="col-4 col-s-8">
-            <h1>SignUp</h1>
+            <h1>User SignUp</h1>
             <SignUpForm />
         </div>
     </div>
