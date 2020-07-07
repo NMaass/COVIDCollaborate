@@ -11,8 +11,10 @@ import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import AboutPage from "../About";
 
+
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
+import Hospitaladdress from "../Hospital-Address";
 
 const App = () => (
     <Router>
@@ -33,6 +35,8 @@ const App = () => (
             <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
             <Route exact path={ROUTES.ADMIN} component={AdminPage} />
             <Route exact path={ROUTES.ABOUT_PAGE} component={AboutPage} />
+            <Route exact path={ROUTES.HOSPITAL_ADDRESS} component={Hospitaladdress} />
+
         </div>
     </Router>
 );
