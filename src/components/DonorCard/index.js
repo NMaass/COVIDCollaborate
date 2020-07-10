@@ -69,6 +69,10 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
 
 export const DonorCard = React.memo(function DonorCard() {
     const [value, setValue] = React.useState(0);
+    const [date, setDate] = React.useState();
+    const [heading, setHeading] = React.useState();
+    const [body, setBody] = React.useState();
+    const [amount, setAmount] = React.useState();
     const styles = useStyles();
     const handleSliderChange = (event, newValue) => {
         setValue(newValue);
@@ -86,19 +90,16 @@ export const DonorCard = React.memo(function DonorCard() {
             <CardContent>
                 <TextInfoContent
                     classes={contentStyles}
-                    overline={'07 JUL 2020'}
-                    heading={'Face Shields'}
-                    body={
-                        'Henry Ford Hospital' +
-                        '2799 W Grand Blvd, Detroit, MI 48202'
-                    }
+                    overline={date}
+                    heading={heading}
+                    body={body}
                 />
                 <Slider
                     valueLabelDisplay="auto"
                     defaultValue={1}
                     step={1}
                     min={1}
-                    max={100}
+                    max={amount}
                     onChange={handleSliderChange}/>
                 <Button className={buttonStyles}>Donate</Button>
             </CardContent>
