@@ -1,74 +1,59 @@
-import React from "react";
-import "./styles.css";
+import React from 'react';
 
-export default function AboutPage() {
-    return (
-        <header>
+export default function AboutPage()
+{
+return(
+    <div>
+        <hr />
 
-            <div className="ourmission">
+        <h3 style="text-align: center;"><strong><em>-Our Mission-</em></strong></h3>
+        <p style="text-align: center;">"Tag Line Here"</p>
 
-                <h1>-Our Mission-</h1>
-            </div>
+        <h3 style="text-align: center;"><em><strong>About Page</strong></em></h3>
+        " In this Page where you will learn more about our app.................."
 
-            <div className="tagline">
-                <h4>"Tag Line Here"</h4>
-            </div>
+        &nbsp;
+        <h3 style="text-align: center;"><em><span style="color: #ff0000;"><strong>Leadership</strong></span></em></h3>
+        &nbsp;
+        <div style="background-color: #d2b4de;">
+            <h4>Nicholas Maassen</h4>
+            Some text
 
-            &nbsp;
-            <div className="aboutpage">
-                <h1>About Page</h1>
-            </div>
+        </div>
+        <div style="background-color: #f8c471;">
+            <h4>Kaniz Khanom</h4>
+            Some text..
 
-            <div className="tagline">
-                <h4>" In this Page where you will learn more about our app.................."  </h4>
-            </div>
-            &nbsp;
+        </div>
+        <div style="background-color: #d2b4de;">
+            <h4>Joy Dass</h4>
+            Some text..
 
-            <div className="leadership">
-                <h1>leadership</h1>
+        </div>
+        <div style="background-color: #f8c471;">
+            <h4>Birol Guldal</h4>
+            Some text..
 
-            </div>
+        </div>
+        <div style="background-color: #d2b4de;">
+            <h4>Henry Kisthardt</h4>
+            Some text..
 
-            <div className="leadership1">
-                <h1>Nicholas Maassen</h1>
-                <h4> Some text... </h4>
-            </div>
+        </div>
+        <div style="background-color: #f8c471;">
+            <h4>Mitun Dass</h4>
+            Some text..
 
-            <div className="leadership2">
-                <h1>Kaniz Khanom</h1>
-                <h4> Some text... </h4>
-            </div>
+        </div>
+        &nbsp;
+        <h6><span style="color: #ff0000;">For More Information Contact Us Here!</span></h6>
+        " Contact Information"
 
-            <div className="leadership3">
-                <h1>Joy Dass</h1>
-                <h4> Some text... </h4>
-            </div>
+        <hr />
 
-            <div className="leadership4">
-                <h1>Birol Guldal</h1>
-                <h4> Some text... </h4>
-            </div>
+        &nbsp;
 
-            <div className="leadership5">
-                <h1>Henry Kisthardt</h1>
-                <h4> Some text... </h4>
-            </div>
+    </div>
+)
 
-            <div className="leadership6">
-                <h1>Mitun Dass</h1>
-                <h4> Some text... </h4>
-            </div>
-
-            &nbsp;
-
-            <div className="Contact">
-                <h3>For More information Contact us Here!</h3>
-                <h4> Contact Info </h4>
-            </div>
-
-
-
-
-        </header>
-    );
 }
