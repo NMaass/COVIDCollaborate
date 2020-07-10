@@ -5,7 +5,19 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background-image:url("../src/components/SignIn/Login6.svg");
+
+
+
+
     /*background-image: url("./Assets/Background.png");*/
 }
 .chips{
@@ -14,7 +26,14 @@ body {
     min-width: 400px;
     max-width: 800px;
 }
+
+.li {
+    color: #ff4b2b;
+    border: 1px;
+
+}
 .field{
+    background: #eee;
     width: 100%;
     height: 56px;
     display: block;
@@ -25,21 +44,95 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
-    margin: 14px auto;
+    margin: 8px auto;
     outline: none;
     box-shadow: 0px 4px 20px 0px transparent;
 }
-.Signout{
-    width: 50%;
+button {
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    color: floralwhite;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+
 }
+.centered-container {
+    background: #3f9699;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    height: 800px;
+    max-height: 1000px;
+
+}
+
+.BackgroundSignInImage {
+    background-image:url("../src/components/SignIn/Login5.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.SignupImage {
+    background-image:url("../src/components/SignIn/Login5.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+button:active {
+    transform: scale(0.95);
+
+}
+
+.FormControlLabel {
+    color: #3f9699;
+    text-align: center;
+    border: 1px solid #ff4b2b;
+}
+.Navigation {
+    background: white;
+    border-radius: 3px;
+}
+
 p {
-    color: aliceblue;
+    color: #eeeeee;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+
 }
+div {
+    color: #ff4b2b;
+    border: 1px;
+
+}
+span {
+    font-size: 12px;
+}
+
+a {
+    color: #eeeeee;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+
 h1 {
-    color: black;
-    font-size: 200%;
+    color: white;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
+    margin: 0;
+    border: 2px;
+
+
 }
 .centered{
     text-align: center;
@@ -52,9 +145,22 @@ h1 {
     font-size: 300%;
     font-weight: bold;
     text-align: center;
+
+
 }
+
+.field {
+
+    color: #3f9699;
+
+
+}
+
+
 .signInLink input:hover{
     color: turquoise;
+    font-size: 98px;
+
 }
 
 code {
@@ -123,4 +229,6 @@ link{
     align-items: center;
     clear: both;
 }
+
+
 

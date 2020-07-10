@@ -6,12 +6,20 @@ import * as ROUTES from '../../constants/routes';
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import DonorFields from "../DonorFields";
+import * as ROLES from '../../constants/roles';
+import {createUser} from "../../api";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import TextField from '@material-ui/core/TextField';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from "@material-ui/core/Typography";
+
 
 const SignUpPage = () => (
-    <div className="signInForm centered-container">
+    <div className="signInForm centered-container SignupImage ">
         <div className="col-4 col-s-8">
-        <h1>SignUp</h1>
-        <SignUpForm />
+            <h1>User SignUp</h1>
+            <SignUpForm />
         </div>
     </div>
 );
@@ -39,33 +47,44 @@ class SignUpFormBase extends Component {
         this.state = { ...INITIAL_STATE };
     }
 
-    onSubmit = event => {
-        const { username, email, passwordOne, isDonor, address, city, state, country, zip, website } = this.state;
-        this.props.firebase
-            .doCreateUserWithEmailAndPassword(email, passwordOne)
-            .then(authUser => {
-                // Create a user in your Firebase realtime database
-                this.props.firebase
-                    .user(authUser.user.uid)
-                    .set({
-                        username,
-                        email,
-                    })
-                    .then(() => {
-                        this.setState({ ...INITIAL_STATE });
-                        this.props.history.push(ROUTES.HOME);
-                    })
-                    .catch(error => {
-                        this.setState({ error });
-                    });
-            })
-            .catch(error => {
-                this.setState({ error });
-            });
+    onSubmit = async event => {
+
 
         event.preventDefault();
+
+        const {username, email, passwordOne, isDonor, address, city, state, country, zip, website} = this.state;
+        const roles = [];
+
+        if (isDonor) {
+            roles.push(ROLES.DONOR)
+        } else {
+            roles.push(ROLES.HOSPITAL)
+        }
+
+        const payload = {
+            username,
+            email,
+            passwordOne,
+            usertype: isDonor ? 'donor' : 'hospital',
+            address_detail: {
+                address,
+                city,
+                zip,
+                country,
+                state
+            },
+            website
+        }
+        const result = await createUser(payload);
+        console.log("Create user failed", result)
+        if (result.error || result !== true) {
+            this.setState({error: result.error});
+        }
+
+        this.setState({...INITIAL_STATE});
+        this.props.history.push(ROUTES.HOME);
     };
-    handleCheck= event => {
+    handleCheck = event => {
         this.setState({[event.target.name]: event.target.checked});
     };
     onChange = event => {
@@ -96,13 +115,14 @@ class SignUpFormBase extends Component {
 
         return (
             <form onSubmit={this.onSubmit}>
-            <FormControlLabel control={
-                <Checkbox
-                    checked={isDonor}
-                    onChange={this.handleCheck}
+                <FormControlLabel control={
+                    <Checkbox
+                        checked={isDonor}
+                        onChange={this.handleCheck}
+                        name="isDonor"
+                    />
+                }   label = "I am a donor"
                 />
-            }   label = "I am a donor"
-                              />
                 <input
                     className="field"
                     name="username"
@@ -193,7 +213,6 @@ class SignUpFormBase extends Component {
                     type="submit">
                     Sign Up
                 </button>
-
 
 
                 {error && <p>{error.message}</p>}

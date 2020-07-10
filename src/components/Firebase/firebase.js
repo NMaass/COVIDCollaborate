@@ -1,6 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
+import 'firebase/firestore'
 import * as firebase from "firebase";
 
 const config = {
@@ -18,6 +19,23 @@ class Firebase {
     constructor() {
         firebase.initializeApp(config);
         firebase.analytics();
+
+        function writeData(){
+            firebase.database.ref("user").set({
+             nameOfTheItem: document.getElementById("whater the textbox is named").value,
+             numberOfItems: "",
+             isOpen: "",
+             requester: "",
+             numberCompleted: "",
+            })
+
+        }
+
+        function getData(){
+
+        }
+        
+
 
 
         this.auth = app.auth();
