@@ -10,3 +10,4 @@ export const HOSPITAL_ADDRESS = '/Hospital';
 
 export const DONOR_HOME = '/donor'
 export const HOSPITAL_HOME = '/hospital'
+export const CONTACT_US ='/index.js';

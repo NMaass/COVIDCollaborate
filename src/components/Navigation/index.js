@@ -37,6 +37,9 @@ const NavigationAuth = () => (
         <li>
             <Link to={ROUTES.DONOR_HOME}>Donor</Link>
         </li>
+        <li>
+            <Link to={ROUTES.CONTACT_US}>ContactUs</Link>
+        </li>
     </ul>
     </div>
 );

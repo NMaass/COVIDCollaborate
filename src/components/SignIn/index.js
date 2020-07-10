@@ -36,21 +36,21 @@ class SignInFormBase extends Component {
     }
 
     validate = () => {
-        let emailError= '';
-        let passwordError= '';
+       let emailError = '';
+        let passwordError = '';
 
         if (!this.state.email.includes('@')) {
             emailError = 'invalid email';
         }
 
-        if (!this.state.password.includes('none')) {
-            passwordError = 'invalid password';
+       if (!this.state.password.includes(null)) {
+           passwordError = 'invalid password';
         }
 
         if (emailError || passwordError) {
             this.setState({emailError, passwordError});
-            return false;
-        }
+           return false;
+       }
         return true;
     };
 
@@ -68,11 +68,11 @@ class SignInFormBase extends Component {
             });
 
         event.preventDefault();
-        const isValid= this.validate();
-        if (isValid) {
+       const isValid= this.validate();
+       if (isValid) {
             console.log(this.state);
             //clear form
-            this.setState(INITIAL_STATE);
+          this.setState(INITIAL_STATE);
         }
     };
 

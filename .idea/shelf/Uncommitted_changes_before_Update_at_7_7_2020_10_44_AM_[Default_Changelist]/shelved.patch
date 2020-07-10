@@ -1,0 +1,96 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM__Default_Changelist_.xml
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM__Default_Changelist_.xml	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM__Default_Changelist_.xml	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM_[Default_Changelist]" date="1593404375060" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM_[Default_Changelist]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 6/29/2020 12:19 AM [Default Changelist]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM_[Default_Changelist]/shelved.patch
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM_[Default_Changelist]/shelved.patch	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM_[Default_Changelist]/shelved.patch	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
+@@ -1,17 +0,0 @@
+-Index: .idea/covidcollaborate.iml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"WEB_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.tmp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/build\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/temp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/tmp\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/covidcollaborate.iml	(revision f4954646766cccf06249067e4ba0d9f38b6f9c72)
+-+++ .idea/covidcollaborate.iml	(date 1592624811082)
+-@@ -3,7 +3,6 @@
+-   <component name="NewModuleRootManager">
+-     <content url="file://$MODULE_DIR$">
+-       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+--      <excludeFolder url="file://$MODULE_DIR$/build" />
+-       <excludeFolder url="file://$MODULE_DIR$/temp" />
+-       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+-     </content>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM_[Default_Changelist]/shelved.patch
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM_[Default_Changelist]/shelved.patch	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_12_19_AM_[Default_Changelist]/shelved.patch	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
+@@ -1,17 +0,0 @@
+-Index: .idea/covidcollaborate.iml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"WEB_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.tmp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/build\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/temp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/tmp\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/covidcollaborate.iml	(revision b0d92c5d89ec942101e82694eb432a394b6da761)
+-+++ .idea/covidcollaborate.iml	(date 1593205105115)
+-@@ -3,7 +3,6 @@
+-   <component name="NewModuleRootManager">
+-     <content url="file://$MODULE_DIR$">
+-       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+--      <excludeFolder url="file://$MODULE_DIR$/build" />
+-       <excludeFolder url="file://$MODULE_DIR$/temp" />
+-       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+-     </content>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM_[Default_Changelist]/shelved.patch
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM_[Default_Changelist]/shelved.patch	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM_[Default_Changelist]/shelved.patch	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
+@@ -1,17 +0,0 @@
+-Index: .idea/covidcollaborate.iml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"WEB_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.tmp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/build\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/temp\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/tmp\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/covidcollaborate.iml	(revision c2d54bf3d57a2b81a92ce8d1868ec351eed75bab)
+-+++ .idea/covidcollaborate.iml	(date 1593404375042)
+-@@ -3,7 +3,6 @@
+-   <component name="NewModuleRootManager">
+-     <content url="file://$MODULE_DIR$">
+-       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+--      <excludeFolder url="file://$MODULE_DIR$/build" />
+-       <excludeFolder url="file://$MODULE_DIR$/temp" />
+-       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+-     </content>
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM__Default_Changelist_.xml
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM__Default_Changelist_.xml	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM__Default_Changelist_.xml	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM_[Default_Changelist]" date="1593205105130" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_26_2020_4_58_PM_[Default_Changelist]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 6/26/2020 4:58 PM [Default Changelist]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM__Default_Changelist_.xml
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM__Default_Changelist_.xml	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM__Default_Changelist_.xml	(revision d837fe487e37bbf147ed281b2f81f375227d7726)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM_[Default_Changelist]" date="1593453791567" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_29_2020_2_03_PM_[Default_Changelist]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 6/29/2020 2:03 PM [Default Changelist]" />
+-</changelist>
+\ No newline at end of file
