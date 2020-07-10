@@ -10,6 +10,8 @@ import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import AboutPage from "../About";
+import ContactUs from "../ContactUs";
+import ContactUsform from "../ContactUs/ContactUs";
 
 
 import * as ROUTES from '../../constants/routes';
@@ -38,6 +40,7 @@ const App = () => (
             <Route exact path={ROUTES.ADMIN} component={AdminPage} />
             <Route exact path={ROUTES.ABOUT_PAGE} component={AboutPage} />
             <Route exact path={ROUTES.HOSPITAL_ADDRESS} component={Hospitaladdress} />
+            <Route exact path={ROUTES.CONTACT_US} component={ContactUs}/>
 
         </div>
     </Router>

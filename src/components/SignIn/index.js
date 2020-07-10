@@ -43,7 +43,7 @@ class SignInFormBase extends Component {
             emailError = 'invalid email';
         }
 
-        if (!this.state.password.includes('none')) {
+        if (this.state.password.includes(null)) {
             passwordError = 'invalid password';
         }
 
