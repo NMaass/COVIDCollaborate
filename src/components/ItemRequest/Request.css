@@ -1,0 +1,36 @@
+h1{
+display: flex;
+border: solid cyan;
+background-color: orange;
+align-items:center;
+justify-content:center;
+margin-top: 0%;
+}
+label{
+	display: flex;
+	background-color: orange;
+	min-width:20%;
+	border-top: solid cyan;
+
+}
+input
+{
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+body
+{
+	margin-top:0%;
+	background-color: green;
+}
+form
+{
+	margin-top:0%;
+	background-color:orange;
+	border: solid cyan;
+}
+div
+{
+	margin-top:0;
+}
