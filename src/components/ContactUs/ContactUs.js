@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Style.css';
+import {Container} from "@material-ui/core";
+import PropTypes from 'prop-types';
 
 class ContactUsForm extends Component {
 
@@ -13,7 +15,6 @@ class ContactUsForm extends Component {
             message: ""
         }
     }
-
 
     handlechangeall = (event) => {
         this.setState({[event.target.name]: event.target.value})
@@ -53,5 +54,16 @@ class ContactUsForm extends Component {
         )
     }
 }
+
+const Button = props => {
+    return
+    <div className="container"></div>;
+};
+
+Button.propTypes = {
+    action: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired
+};
+
 
 export default ContactUsForm;

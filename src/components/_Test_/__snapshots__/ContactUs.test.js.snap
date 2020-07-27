@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`first Snaptest test 1`] = `
+<div
+  className="style"
+>
+  <h2>
+     Contact Us 
+  </h2>
+  <br />
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <label>
+         Name 
+      </label>
+      <br />
+      <input
+        name="name"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+       
+      <br />
+      <label>
+         Email 
+      </label>
+      <br />
+      <input
+        name="email"
+        onChange={[Function]}
+        type="email"
+        value=""
+      />
+       
+      <br />
+      <label>
+         Mobile 
+      </label>
+      <br />
+      <input
+        name="phone"
+        onChange={[Function]}
+        type="number"
+        value=""
+      />
+       
+      <br />
+      <label>
+         Message 
+      </label>
+      <textarea
+        name="message"
+        onChange={[Function]}
+        value=""
+      />
+       
+      <br />
+      <input
+        type="submit"
+        value="Send"
+      />
+    </form>
+  </div>
+</div>
+`;
+
+exports[`first snaptest test 1`] = `
+<div
+  className="style"
+>
+  <h2>
+     Contact Us 
+  </h2>
+  <br />
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <label>
+         Name 
+      </label>
+      <br />
+      <input
+        name="name"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+       
+      <br />
+      <label>
+         Email 
+      </label>
+      <br />
+      <input
+        name="email"
+        onChange={[Function]}
+        type="email"
+        value=""
+      />
+       
+      <br />
+      <label>
+         Mobile 
+      </label>
+      <br />
+      <input
+        name="phone"
+        onChange={[Function]}
+        type="number"
+        value=""
+      />
+       
+      <br />
+      <label>
+         Message 
+      </label>
+      <textarea
+        name="message"
+        onChange={[Function]}
+        value=""
+      />
+       
+      <br />
+      <input
+        type="submit"
+        value="Send"
+      />
+    </form>
+  </div>
+</div>
+`;
