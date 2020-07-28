@@ -41,6 +41,12 @@
     ]
   },
   "devDependencies": {
+
+    "hooks": "^0.3.2",
+    "react-test-renderer": "^16.13.1",
+    "style-loader": "^1.2.1"
+  }
+
     "clsx": "^1.1.1",
     "react-test-renderer": "^16.13.1"
   },
@@ -50,4 +56,5 @@
   "license": "MIT",
   "react-test-renderer": "^16.13.1",
   "style-loader": "^1.2.1"
+
 }
