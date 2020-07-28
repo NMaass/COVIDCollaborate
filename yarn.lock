@@ -973,6 +973,14 @@
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-transform-typescript" "^7.9.0"
 
+"@babel/runtime-corejs3@^7.10.2":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.10.5.tgz#a57fe6c13045ca33768a2aa527ead795146febe1"
+  integrity sha512-RMafpmrNB5E/bwdSphLr8a8++9TosnyJp98RZzI6VOx2R2CCMpsXXXRvmI700O9oEKpXdZat6oEK68/F0zjd4A==
+  dependencies:
+    core-js-pure "^3.0.0"
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime-corejs3@^7.7.4", "@babel/runtime-corejs3@^7.8.3":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.9.6.tgz#67aded13fffbbc2cb93247388cf84d77a4be9a71"
@@ -992,6 +1000,13 @@
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
   integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
+  integrity sha512-otddXKhdNn7d0ptoFRHtMLa8LqDxLYwTjB4nYgM1yy5N6gU/MUf8zqyyLltCH3yAVitBzmwK4us+DD0l/MauAg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1747,6 +1762,17 @@
     dom-accessibility-api "^0.4.4"
     pretty-format "^25.5.0"
 
+"@testing-library/dom@^7.21.5":
+  version "7.21.5"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.21.5.tgz#d87312efc5039313f9ea246ed722d808f2ffcbb3"
+  integrity sha512-zZqC5T/9Upjs0/3hyrYNpGxw75dr/bLLD27pUdb3WWJ50JHwutvnQ1FJNHbVth9f2hLzEnh7hBdZ9pD++8pJ8g==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+    "@types/aria-query" "^4.2.0"
+    aria-query "^4.2.2"
+    dom-accessibility-api "^0.4.6"
+    pretty-format "^25.5.0"
+
 "@testing-library/jest-dom@^4.2.4":
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-4.2.4.tgz#00dfa0cbdd837d9a3c2a7f3f0a248ea6e7b89742"
@@ -1775,6 +1801,11 @@
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-7.2.1.tgz#2ad4e844175a3738cb9e7064be5ea070b8863a1c"
   integrity sha512-oZ0Ib5I4Z2pUEcoo95cT1cr6slco9WY7yiPpG+RGNkj8YcYgJnM7pXmYmorNOReh8MIGcKSqXyeGjxnr8YiZbA==
+
+"@types/aria-query@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@types/aria-query/-/aria-query-4.2.0.tgz#14264692a9d6e2fa4db3df5e56e94b5e25647ac0"
+  integrity sha512-iIgQNzCm0v7QMhhe4Jjn9uRh+I6GoPmt03CbEtwx3ao8/EfoQcmgtqH4vQ5Db/lxiIGaWDv6nwvunuh0RyX0+A==
 
 "@types/babel__core@^7.1.0":
   version "7.1.7"
@@ -2384,6 +2415,14 @@ aria-query@^4.0.2:
   dependencies:
     "@babel/runtime" "^7.7.4"
     "@babel/runtime-corejs3" "^7.7.4"
+
+aria-query@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-4.2.2.tgz#0d2ca6c9aceb56b8977e9fed6aed7e15bbd2f83b"
+  integrity sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==
+  dependencies:
+    "@babel/runtime" "^7.10.2"
+    "@babel/runtime-corejs3" "^7.10.2"
 
 arity-n@^1.0.4:
   version "1.0.4"
@@ -3312,11 +3351,6 @@ clsx@^1.0.4:
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.0.tgz#62937c6adfea771247c34b54d320fb99624f5702"
   integrity sha512-3avwM37fSK5oP6M5rQ9CNe99lwxhXDOeSWVPAOYF6OazUTgZCMb0yWlJpmdD74REy1gkEaFiub2ULv4fq9GUhA==
 
-clsx@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
-  integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
-
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -4141,6 +4175,11 @@ dom-accessibility-api@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.4.4.tgz#c2f9fb8b591bc19581e7ef3e6fe35baf1967c498"
   integrity sha512-XBM62jdDc06IXSujkqw6BugEWiDkp6jphtzVJf1kgPQGvfzaU7/jRtRSF/mxc8DBCIm2LS3bN1dCa5Sfxx982A==
+
+dom-accessibility-api@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.4.6.tgz#f3f2af68aee01b1c862f37918d41841bb1aaf92a"
+  integrity sha512-qxFVFR/ymtfamEQT/AsYLe048sitxFCoCHiM+vuOdR3fE94i3so2SCFJxyz/RxV69PZ+9FgToYWOd7eqJqcbYw==
 
 dom-converter@^0.2:
   version "0.2.0"

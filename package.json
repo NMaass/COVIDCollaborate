@@ -41,14 +41,10 @@
     ]
   },
   "devDependencies": {
-
+    "@testing-library/dom": "^7.21.5",
     "hooks": "^0.3.2",
     "react-test-renderer": "^16.13.1",
     "style-loader": "^1.2.1"
-  }
-
-    "clsx": "^1.1.1",
-    "react-test-renderer": "^16.13.1"
   },
   "main": "index.js",
   "repository": "https://github.com/NMaass/COVIDCollaborate.git",
@@ -56,5 +52,4 @@
   "license": "MIT",
   "react-test-renderer": "^16.13.1",
   "style-loader": "^1.2.1"
-
 }

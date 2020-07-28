@@ -1,6 +1,6 @@
-
 import React from "react";
 import "./styles.css";
+import Button from './button';
 
 export default function AboutPage() {
     return (
@@ -64,9 +64,10 @@ export default function AboutPage() {
 
             &nbsp;
 
-            <div className="Contact">
-                <h3>For More information Contact us Here!</h3>
-                <h4> Contact Info </h4>
+            <div className="App">
+                <header className ="App-header">
+                    <Button label="Contact Us"></Button>
+                </header>
             </div>
 
 
@@ -75,3 +76,6 @@ export default function AboutPage() {
         </header>
     );
 }
+
+
+
