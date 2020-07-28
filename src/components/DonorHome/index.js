@@ -19,19 +19,21 @@ export default function DonorHome() {
     return(
     <div>
         <Button onClick = {onClick}>View Requests</Button>
-        {Boolean(request.length) && request.map((request, i) => (
-            <DonorCard
-                key={i}
-                heading={request.item}
-                body={request.description}
-                date={request.date}
-                amount={request.amount}
-            >
-                <h1>{request.name}</h1>
-            </DonorCard>
+        {Boolean(request.length) && request.map((request, i) => {
+            return(
+                <DonorCard
+                    key={i}
+                    heading={request.item}
+                    body={request.description}
+                    date={request.date}
+                    amount={request.amount}
+                >
+                    <h1>{request.name}</h1>
+                </DonorCard>
             )
-        )}
+        }
+        </div>
 
-    </div>
-)
+
+
 }
