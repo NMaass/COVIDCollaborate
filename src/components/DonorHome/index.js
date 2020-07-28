@@ -31,9 +31,10 @@ export default function DonorHome() {
                     <h1>{request.name}</h1>
                 </DonorCard>
             )
+        })
         }
         </div>
 
-
+    )
 
 }
