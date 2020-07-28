@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background-image:url("../src/components/SignIn/Login6.svg");
+
+
+
+
+    /*background-image: url("./Assets/Background.png");*/
+}
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+.li {
+    color: #ff4b2b;
+    border: 1px;
+
+}
+.field{
+    background: #eee;
+    width: 100%;
+    height: 56px;
+    display: block;
+    padding: 0px 16px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 8px auto;
+    outline: none;
+    box-shadow: 0px 4px 20px 0px transparent;
+}
+button {
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    color: floralwhite;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+
+}
+.centered-container {
+    background: #3f9699;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    height: 800px;
+    max-height: 1000px;
+
+}
+
+.BackgroundSignInImage {
+    background-image:url("../src/components/SignIn/Login5.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.SignupImage {
+    background-image:url("../src/components/SignIn/Login5.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+button:active {
+    transform: scale(0.95);
+
+}
+
+.FormControlLabel {
+    color: #3f9699;
+    text-align: center;
+    border: 1px solid #ff4b2b;
+}
+.Navigation {
+    background: white;
+    border-radius: 3px;
+}
+
+p {
+    color: #eeeeee;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+
+}
+div {
+    color: #ff4b2b;
+    border: 1px;
+
+}
+span {
+    font-size: 12px;
+}
+
+a {
+    color: #eeeeee;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    border: 2px;
+
+
+}
+.centered{
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+.signInLink{
+    color: #3f9699;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.field {
+
+    color: #3f9699;
+
+
+}
+
+
+.signInLink input:hover{
+    color: turquoise;
+    font-size: 98px;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+link{
+    text-decoration: none;
+}
+/*Responsive layout classes*/
+
+/* For mobile phones: */
+.row {
+    padding: 0 32px;
+    display: block;
+    clear: both;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/*centers horizontally*/
+.center {
+    text-align: center
+}
+
+/*centers horizontally and vertically for entire page*/
+.centered-container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+}
+
+/*About Css File */
+
+.aboutpage {
+    background: white;
+    border-radius: 3px;
+}
+
+
+.ourmission {
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    background-color: #5ab7f5;
+
+
+}
+
+.tagline {
+    text-align: center;
+}
+
+.aboutpage {
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+.leadership {
+    text-align: center;
+    color: red;
+    font-family: "Lucida Console", Courier, monospace;
+
+}
+
+.leadership1 {
+    text-align: center;
+    background-color: #C6D1D5;
+
+}
+
+.leadership2 {
+    text-align: center;
+    background-color: #DDF6FF;
+
+}
+
+.leadership3 {
+    text-align: center;
+    background-color: #C6D1D5;
+
+}
+
+.leadership4 {
+    text-align: center;
+    background-color: #DDF6FF;
+
+}
+
+.leadership5 {
+    text-align: center;
+    background-color: #C6D1D5;
+
+}
+
+.leadership6 {
+    text-align: center;
+    background-color: #DDF6FF;
+
+}
+
+
+.Contact {
+    text-align: center;
+    background-color: #D7DAD8;
+}
+
+
