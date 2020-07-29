@@ -42,3 +42,14 @@ test('Check to see if the word contain a S', () => {
     expect('Messag').toMatch(/s/);
 });
 
+
+describe('Button', () => {
+    it('should render without throwing an error ', () => {
+        const component = renderer.create(<Button action={''} path={'Cancel'} />);
+        expect(
+            shallow(<Button action={''} path={'Cancel'} />)
+                .find('div.container')
+                .exists()
+        ).toBe(true);
+    });
+});
